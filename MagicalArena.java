@@ -2,16 +2,31 @@ import java.util.Random;
 
 public class MagicalArena {
 
-    public static void main(String[] args) {
+    public String getReady(int maxhealth , int maxstrength , int maxattack) {
+
+        String winner;
         
-        Player playerA = new Player("A", 50, 5, 10);
-        Player playerB = new Player("B", 100, 10, 5);
+        // Making two objects of player class each representing each player
+        Player playerA = new Player("A");
+        Player playerB = new Player("B");
+
+
+
+        System.out.println("Player A info:%n");
+        System.out.printf("Health: %d, Attack: %d, Strength: %d%n",
+                playerA.getHealth(), playerA.getAttack(), playerA.getStrength());
 
         
-        fight(playerA, playerB);
+        System.out.println("Player B info:%n");
+        System.out.printf("Health: %d, Attack: %d, Strength: %d%n",
+                playerB.getHealth(), playerB.getAttack(), playerB.getStrength());
+
+        winner = fight(playerA, playerB);
+
+        return winner;
     }
 
-    public static void fight(Player attacker, Player defender) {
+    public String fight(Player attacker, Player defender) {
         Random random = new Random();
 
         while (attacker.getHealth() > 0 && defender.getHealth() > 0) {
@@ -29,9 +44,16 @@ public class MagicalArena {
            
             if (defender.getHealth() <= 0) {
                 System.out.println(attacker.getName() + " Wins!");
-                break;
+                return attacker.getName();
+                
             }
 
+            try {
+            Thread.sleep(1000);
+            }   
+            catch (InterruptedException e) {
+            e.printStackTrace();
+            }
             
             Player temp = attacker;
             attacker = defender;

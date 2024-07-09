@@ -1,15 +1,32 @@
+import java.util.Random;
+
 public class Player {
     private String name;
     private int health;
     private int strength;
     private int attack;
 
-    public Player(String name, int health, int strength, int attack) {
+    Random random = new Random();
+
+    public Player(String name) {
         this.name = name;
-        this.health = health;
-        this.strength = strength;
-        this.attack = attack;
     }
+
+    public void getRandomHealth(int max ,int min) {
+        
+        this.health = random.nextInt(max - min + 1) + min;
+    }
+
+    public void getRandomStrength(int max ,int min) {
+        
+        this.strength = random.nextInt(max - min + 1) + min;
+    }
+
+    public void getRandomAttack(int max ,int min) {
+        
+        this.attack = random.nextInt(max - min + 1) + min;
+    }
+
 
     public String getName() {
         return name;
