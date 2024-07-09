@@ -54,7 +54,7 @@ public class MagicalArena {
             }
 
             try {
-            Thread.sleep(1000);
+            Thread.sleep(600);
             }   
             catch (InterruptedException e) {
             e.printStackTrace();

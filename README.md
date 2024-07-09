@@ -13,4 +13,6 @@ Run: Once compiled, execute the program with:
 
 This will run the MagicalArenaTest file which contains different scenarios on which health , attack and strength values of the players depend.
 
+  *Both players uses randomly generated values for health , strength and attack*
+
 Thankyou
