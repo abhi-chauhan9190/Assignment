@@ -12,6 +12,12 @@ public class Player {
         this.name = name;
     }
 
+    public void setattributes(int maxhealth , int maxstrength , int maxattack){
+          getRandomHealth(20, maxhealth);
+          getRandomStrength(5, maxstrength);
+          getRandomAttack(10, maxattack);
+    }
+
     public void getRandomHealth(int max ,int min) {
         
         this.health = random.nextInt(max - min + 1) + min;
