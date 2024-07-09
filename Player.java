@@ -18,17 +18,17 @@ public class Player {
           getRandomAttack(10, maxattack);
     }
 
-    public void getRandomHealth(int max ,int min) {
+    public void getRandomHealth(int min, int max) {
         
         this.health = random.nextInt(max - min + 1) + min;
     }
 
-    public void getRandomStrength(int max ,int min) {
+    public void getRandomStrength(int min, int max) {
         
         this.strength = random.nextInt(max - min + 1) + min;
     }
 
-    public void getRandomAttack(int max ,int min) {
+    public void getRandomAttack(int min, int max) {
         
         this.attack = random.nextInt(max - min + 1) + min;
     }
