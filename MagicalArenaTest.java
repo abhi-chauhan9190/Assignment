@@ -20,6 +20,6 @@ public class MagicalArenaTest{
                 bwins++;
             }
         }
-        System.out.printf("A won : %d times %n B won : %d times",awins,bwins);
+        System.out.printf("A won : %d times %nB won : %d times",awins,bwins);
     }
 }
