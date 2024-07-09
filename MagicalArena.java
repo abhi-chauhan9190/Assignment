@@ -16,12 +16,12 @@ public class MagicalArena {
         playerA.setattributes(maxhealth, maxstrength, maxattack);
         playerB.setattributes(maxhealth, maxstrength, maxattack);
 
-        System.out.println("Player A info:%n");
+        System.out.println("Player A info:");
         System.out.printf("Health: %d, Attack: %d, Strength: %d%n",
                 playerA.getHealth(), playerA.getAttack(), playerA.getStrength());
 
         
-        System.out.println("Player B info:%n");
+        System.out.println("Player B info:");
         System.out.printf("Health: %d, Attack: %d, Strength: %d%n",
                 playerB.getHealth(), playerB.getAttack(), playerB.getStrength());
 
