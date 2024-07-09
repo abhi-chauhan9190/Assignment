@@ -11,5 +11,6 @@ Compile: Open a terminal or command prompt and navigate to the directory contain
 Run: Once compiled, execute the program with:
                     java MagicalArenaTest
 
-This will simulate a fight between two predefined players and display the results.
+This will run the MagicalArenaTest file which contains different scenarios on which health , attack and strength values of the players depend.
 
+Thankyou
